@@ -9,6 +9,8 @@ from django.contrib import messages
 from datetime import datetime
 import logging
 import json
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
+
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
